@@ -11,6 +11,10 @@ public class Array1 {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("\nEnter a integer: ");
+        if(!sc.hasNextInt()){
+            System.out.println("Invalid input. Please enter an integer.");
+            return;
+        }
         int search = sc.nextInt();
 
         boolean found = false;
